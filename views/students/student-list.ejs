@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../includes/head.ejs') %>
+</head>
+<body>
+    <%- include('../includes/nav.ejs') %>
+    <h2>Student list</h2>
+
+    <ul>
+        <%students.map((item) =>{ %>
+        <li><%= item.name%></li>
+        <%})%>
+    </ul>
+    <ul>
+        <%students.map((item) =>{ %>
+        <li><%= item.id%></li>
+        <%})%>
+    </ul>
+
+    <!-- to open http://127.0.0.1:3000/students/ -->
+</body>
+</html>
